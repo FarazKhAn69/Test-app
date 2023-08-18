@@ -1,0 +1,1 @@
+export { LoginInterface } from "src/auth/interfaces/login.interface";

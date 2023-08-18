@@ -1,0 +1,1 @@
+export { UserPreferenceController } from "src/user/controllers/user-preferences.controller";

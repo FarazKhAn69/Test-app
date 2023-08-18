@@ -1,0 +1,1 @@
+export { UserPreferenceCreateDto } from "src/user/dtos/user-preference-create.dto";
