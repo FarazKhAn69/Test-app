@@ -19,11 +19,7 @@ export class AuthController {
   @Post('register')
   async register(@Body() userRegisterDto: AuthRegisterDto): Promise<UserInterface> {
     const createdUser = await this.authService.register(userRegisterDto);
-
-    // Call the "send link" API
-    // const sendLinkDto: SendTokenDto = { email: createdUser.email };
     await this.authService.sendTokenByEmail(createdUser.email);
-
     return createdUser;
   }
 
